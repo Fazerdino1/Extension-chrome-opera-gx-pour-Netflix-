@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 270px; background: #141414; color: white; }
+    h1 { font-size: 16px; margin-bottom: 10px; }
+    label { display: block; margin-top: 8px; }
+    select, button { width: 100%; padding: 5px; margin-top: 4px; background: #333; color: white; border: none; border-radius: 4px; }
+    table { width: 100%; font-size: 12px; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 4px; border: 1px solid #444; text-align: left; }
+    th { background-color: #222; }
+  </style>
+</head>
+<body>
+  <h1>Netflix Ultimate</h1>
+
+  <label>🎨 Thème</label>
+  <select id="theme">
+    <option value="auto">Auto</option>
+    <option value="light">Clair</option>
+    <option value="dark">Sombre</option>
+  </select>
+
+  <label>⏩ Vitesse par défaut</label>
+  <select id="speed">
+    <option value="1">1x</option>
+    <option value="1.25">1.25x</option>
+    <option value="1.5">1.5x</option>
+    <option value="2">2x</option>
+  </select>
+
+  <label><input type="checkbox" id="enablePreview"> Aperçu dynamique</label>
+  <label><input type="checkbox" id="enableStats"> Statistiques activées</label>
+
+  <button id="save">💾 Sauvegarder</button>
+
+  <h2 style="margin-top:15px;">📊 Comparateur</h2>
+  <div id="compare-table"></div>
+
+</body>
+<script src="popup.js"></script>
+</html>

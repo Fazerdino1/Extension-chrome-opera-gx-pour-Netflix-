@@ -1,0 +1,1 @@
+console.log("Netflix Ultimate Extension active");
