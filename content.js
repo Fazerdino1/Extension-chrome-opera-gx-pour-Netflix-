@@ -1,1 +1,1 @@
-console.log("Netflix Ultimate Extension active");
+console.log("Netflix Ultimate activé.");
