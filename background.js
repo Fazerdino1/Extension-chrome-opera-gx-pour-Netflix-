@@ -1,1 +1,3 @@
-chrome.runtime.onInstalled.addListener(() => { console.log("Netflix Ultimate Extension activée."); });
+chrome.runtime.onInstalled.addListener(() => {
+  console.log("Netflix Ultimate installé !");
+});

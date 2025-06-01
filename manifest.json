@@ -1,19 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "Netflix Ultimate Extension",
-  "version": "1.4",
-  "description": "Extension Netflix avec recherche avancée, contrôle manette, comparateur, playlists, stats, thème, preview, etc.",
+  "name": "Netflix Ultimate",
+  "version": "1.0",
+  "description": "Extension modulaire pour am\u00e9liorer Netflix.",
   "permissions": [
     "storage",
     "scripting",
-    "activeTab"
+    "activeTab",
+    "tabs"
   ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
+      "128": "icons/icon128.png"
     }
   },
   "background": {
@@ -22,13 +21,17 @@
   "content_scripts": [
     {
       "matches": [
-        "*://www.netflix.com/*"
+        "*://*.netflix.com/*"
       ],
       "js": [
-        "content.js",
-        "features_bundle.js"
+        "content.js"
       ],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "icons": {
+    "128": "icons/icon128.png",
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  }
 }
